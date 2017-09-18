@@ -46,7 +46,7 @@ $GLOBALS["MENUS"] = array(
     'Info' => array(
         'describe.php'          => new Page('Standard & Custom Objects','Describes the attributes, fields, record types, and child relationships of an object in a tree format.',true,true,true,'usesObject',true,''),
         'metadataDescribeAndList.php'      => new Page('Metadata Types & Components','Describes and lists the metadata components in this organization.',true,true,true,true,true,''),
-        'testFile.php'          => New Page('Test File','Test',true,true,true,false,true,''),
+        'SFLogins.php'          => New Page('SF Logins','SF Logins',true,true,true,false,true,''),
         'sessionInfo.php'       => new Page('Session Information','Information about the current session.',true,true,true,false,true,''),
     ),
 
