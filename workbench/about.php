@@ -182,6 +182,7 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
 
 <hr />
+       <p>MJ Change Test</p>
 
 <?php
 include_once 'footer.php';
