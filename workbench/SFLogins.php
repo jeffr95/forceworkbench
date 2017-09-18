@@ -9,30 +9,9 @@ $persistedSavedQueryRequestsKey = "PSQR@";
 if (isset($_COOKIE[$persistedSavedQueryRequestsKey])) {
     setcookie($persistedSavedQueryRequestsKey, null, time() - 3600);
 }
-$defaultSettings['numFilters'] = 1;
-if (isset($_POST['justUpdate']) && $_POST['justUpdate'] == true) {
-    $queryRequest = new QueryRequest($defaultSettings);
+$queryRequest = new QueryRequest($defaultSettings);
     $queryRequest->setObject($_POST['SF_Login__c']);
-} else if (isset($_POST['querySubmit'])) {
-    $queryRequest = new QueryRequest($_REQUEST);
-} else if(isset($_SESSION['lastQueryRequest'])) {
-    $queryRequest = $_SESSION['lastQueryRequest'];
-} else {
-    $queryRequest = new QueryRequest($defaultSettings);
-    $queryRequest->setObject(WorkbenchContext::get()->getDefaultObject());
-}
-if (isset($_GET['qrjb'])) {
-    if ($queryRequestJsonString = base64_decode($_REQUEST['qrjb'], true)) {
-        if ($queryRequestJson = json_decode($queryRequestJsonString, true)) {
-            $queryRequest = new QueryRequest($queryRequestJson);
-            $_POST['querySubmit'] = 'Query'; //simulate the user clicking 'Query' to run immediately
-        } else {
-            displayErrorBeforeForm('Could not parse query request');
-        }
-    } else {
-        displayErrorBeforeForm('Could not decode query request');
-    }
-}
+
 $_SESSION['lastQueryRequest'] = $queryRequest;
 //Main form logic: When the user first enters the page, display form defaulted to
 //show the query results with default object selected on a previous page, otherwise
@@ -258,7 +237,7 @@ function queryAsync($queryRequest) {
     preg_match("/FROM\s(\w+)/i", $queryRequest->getSoqlQuery(), $fromMatches);
     // if we can't find it, go ahead and use the object from the form.
     // it's probably a malformed query anyway, but let SFDC error on it instead of Workbench
-    $job->setObject(isset($fromMatches[1]) ? $fromMatches[1] : $queryRequest->getObject());
+    $job->setObject($queryRequest->getObject());
     $job->setOpertion("query");
     $job->setContentType(substr($queryRequest->getExportTo(), strlen("async_")));
     $job->setConcurrencyMode(WorkbenchConfig::get()->value("asyncConcurrencyMode"));
