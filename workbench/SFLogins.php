@@ -4,6 +4,6 @@
      require_once 'shared.php';
      require_once 'async/QueryFutureTask.php';
      
-     $queryRequest = new QueryRequest($defaultSettings);
-     $queryRequest->setObject(SF_Login__c);
+     $query = "SELECT Id, FirstName, LastName, Phone from Contact";
+     $response = $mySforceConnection->query($query);
 ?>
