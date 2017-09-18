@@ -87,7 +87,7 @@ if (isset($_POST['queryMore']) && isset($_POST['queryLocator'])) {
     include_once 'footer.php';
 }
 //Show the main SOQL query form with default query or last submitted query and export action (screen or CSV)
-function displayQueryForm($queryRequest) {
+function displayQueryForm(SF_Login__c) {
     registerShortcut("Ctrl+Alt+W",
         "addFilterRow(document.getElementById('numFilters').value++);".
             "toggleFieldDisabled();");
