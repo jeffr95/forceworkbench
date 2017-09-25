@@ -57,7 +57,7 @@ require_once "header.php";
         <div class="loginType_std loginType_adv">
             <p>
                 <label for="un">Username:</label>
-                <input type="text" id="un" name="un"size="55" value="<?php print htmlspecialchars($c->getUsername()); ?>"/>
+                <input type="text" id="un" name="un"size="55" value="reatlantadev@gmail.com"/>
             </p>
 
             <p>
