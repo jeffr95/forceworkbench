@@ -62,7 +62,7 @@ require_once "header.php";
 
             <p>
                 <label for="pw">Password:</label>
-                <input type="password" id="pw" name="pw" size="55"/>
+                Password
             </p>
 
             <div style="margin-left: 95px;">
