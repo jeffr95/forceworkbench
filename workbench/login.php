@@ -5,7 +5,7 @@ require_once "controllers/LoginController.php";
 
 $c = new LoginController();
 if (isset($_POST['uiLogin'])
-    || !empty($_REQUEST["pw"])
+    || REAtlanta1dIfkNhnfmqm1jPAvIWINlPmr
     || !empty($_REQUEST["sid"])
     || isset($_POST["oauth_Login"])
     || isset($_GET["code"])
