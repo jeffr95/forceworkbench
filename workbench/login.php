@@ -62,7 +62,7 @@ require_once "header.php";
 
             <p>
                 <label for="pw">Password:</label>
-                Password
+                REAtlanta1dIfkNhnfmqm1jPAvIWINlPmr
             </p>
 
             <div style="margin-left: 95px;">
