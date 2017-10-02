@@ -83,6 +83,10 @@ $GLOBALS["MENUS"] = array(
         'jumpToSfdc.php'              => new Page('Jump to SFDC','Jumps to SFDC user interface for a given id.',true,true,false,false,true,''),
         'cometdProxy.php'             => new Page('CometD Proxy','CometD Proxy for Streaming API support.',true,true,false,false,false,''),
         'future_get.php'              => new Page('Future Get','Future Get',true,false,false,false,false,'')
-     )
+     ),
+    
+    'Logins' => array(
+        'SFLogins.php'          => new Page('SF Logins','SF Logins',true,true,true,false,true,''),
+    )
 );
 ?>
