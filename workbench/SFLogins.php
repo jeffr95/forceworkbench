@@ -35,7 +35,7 @@ table#t01, table#t01 th, table#t01 td
       <tr>
         <td><input type="button" value="Login" onclick="window.open('https://www.salesforce.com/login.jsp?un=relationedgeatlanta@gmail.com&pw=')"/>     Trailhead Prod</td>
         <td><input type="button" value="Login" onclick="window.open('https://test.salesforce.com/login.jsp?un=jrichards@relationedge.dev1.com&pw=')"/>     Trailhead Sandbox</td>
-        <td><input type="button" value="Login" onclick="window.open('https://relationedgeatlantaworkbench.herokuapp.com/login.php?un=m_bean@trailhead.com&pw=Niceday44h6wbpNrib3gsD5kTJ8cMuKa')"/>     Trailhead Prod</td>
+        <td><input type="button" value="Login" onclick="window.open('https://relationedgeatlantaworkbench.herokuapp.com/login.php?un=m_bean@trailhead.com&pw=Niceday44h6wbpNrib3gsD5kTJ8cMuKa&atl=Workbench1')"/>     Trailhead Prod</td>
       </tr>
   </table>
 </form>
