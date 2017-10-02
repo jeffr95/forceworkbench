@@ -2,8 +2,10 @@
 require_once 'session.php';
 require_once 'shared.php';
 require_once 'header.php';
-?>
 
+$query = 'SELECT Id,Name from Account limit 5';
+?>
+print($query);
 <style>
 table#t01, table#t01 th, table#t01 td{
     border: 1px solid black;
