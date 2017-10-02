@@ -39,3 +39,12 @@ table#t01, table#t01 th, table#t01 td
       </tr>
   </table>
 </form>
+
+<?php
+
+print "<input type='hidden' id='numReturningObjects' name='numReturningObjects' value='" . count($searchRequest->getReturningObjects()) ."' />";
+print "<td NOWRAP>Search for </td><td NOWRAP colspan='2'><input type='text' id='SB_searchString' name='SB_searchString' value=\"" . htmlspecialchars($searchRequest->getSearchString(),ENT_QUOTES) . "\" size='37' onKeyUp='buildSearch();' /> in ";
+print " limited to <input id='SB_limit' name='SB_limit' type='text'  value='" . htmlspecialchars($searchRequest->getLimit(),ENT_QUOTES) . "' size='5' onKeyUp='buildSearch();' /> maximum records</td></tr>\n";
+print "<tr><td><input type='submit' name='searchSubmit' value='Search' />";
+
+?>
