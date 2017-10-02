@@ -85,7 +85,7 @@ $GLOBALS["MENUS"] = array(
         'future_get.php'              => new Page('Future Get','Future Get',true,false,false,false,false,'')
      ),
     
-    'Logins' => array(
+    'Logins' => (
         'SFLogins.php'          => new Page('SF Logins','SF Logins',true,true,true,false,true,''),
     )
 );
