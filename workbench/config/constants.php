@@ -70,6 +70,10 @@ $GLOBALS["MENUS"] = array(
         'metadataDeploy.php'    => new Page('Deploy','Deploys metadata components to this organization.',true,false,true,true,true,''),
         'metadataRetrieve.php'  => new Page('Retrieve','Retrieves metadata components from this organization.',true,true,true,true,true,''),
     ),
+    
+    'Logins' => array(
+        'SFLogins.php'          => new Page('SF Logins','SF Logins',true,true,true,false,true,''),
+    ),
 
     'Utilities' => array(
         'restExplorer.php'            => new Page('REST Explorer','Explore and discover the REST API.',true,false,true,true,true,''),
@@ -84,10 +88,6 @@ $GLOBALS["MENUS"] = array(
         'cometdProxy.php'             => new Page('CometD Proxy','CometD Proxy for Streaming API support.',true,true,false,false,false,''),
         'future_get.php'              => new Page('Future Get','Future Get',true,false,false,false,false,'')
      ),
-    
-    'Logins' => array(
-        'SFLogins.php'          => new Page('SF Logins','SF Logins',true,true,true,false,true,''),
-    )
     
 );
 ?>
