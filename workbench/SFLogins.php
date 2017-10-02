@@ -5,7 +5,7 @@ require_once 'header.php';
 ?>
 
 <style>
-table#t01, table#t01 td{
+table#t01 tr, table#t01 td{
     border: 1px solid black;
     border-collapse: collapse;
 }
