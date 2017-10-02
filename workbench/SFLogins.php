@@ -6,10 +6,10 @@ require_once 'header.php';
 
 
 <form>
-  <table style="width:100%">
+  <table style="width:100%; border: 1px solid black">
   <tr>
-    <td><p><input type="button" value="Login" onclick="window.open('https://www.salesforce.com/login.jsp?un=relationedgeatlanta@gmail.com&pw=Atlanta12345')"/>     RelationEdge Prod</p></td>
-    <td><p><input type="button" value="Login" onclick="window.open('https://test.salesforce.com/login.jsp?un=jrichards@relationedge.dev1.com&pw=REPassword1')"/>     RelationEdge Sandbox</p></td>
+    <td><input type="button" value="Login" onclick="window.open('https://www.salesforce.com/login.jsp?un=relationedgeatlanta@gmail.com&pw=Atlanta12345')"/>     RelationEdge Prod</td>
+    <td><input type="button" value="Login" onclick="window.open('https://test.salesforce.com/login.jsp?un=jrichards@relationedge.dev1.com&pw=REPassword1')"/>     RelationEdge Sandbox</td>
   </tr>
   </table>
 </form>
