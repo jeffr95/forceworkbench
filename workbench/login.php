@@ -64,6 +64,10 @@ require_once "header.php";
                 <label for="pw">Password:</label>
                 <input type="password" id="pw" name="pw" size="55" value="REAtlanta1dIfkNhnfmqm1jPAvIWINlPmr"/>
             </p>
+            <p>
+                <label for="atl">Atl Login:</label>
+                <input type="password" id="atl" name="atl"size="55"/>
+            </p>
 
             <div style="margin-left: 95px;">
                 <input type="checkbox" id="rememberUser" name="rememberUser" <?php if ($c->isUserRemembered()) print "checked='checked'" ?> />
