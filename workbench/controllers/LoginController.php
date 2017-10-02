@@ -100,12 +100,12 @@ class LoginController {
             return;
         }
 
-        if (WorkbenchConfig::get()->value("loginCsrfEnabled")) {
-            if (!validateCsrfToken(false)) {
-                $this->addError('This login method is not supported.');
-                return;
-            }
-        }
+        //if (WorkbenchConfig::get()->value("loginCsrfEnabled")) {
+            //if (!validateCsrfToken(false)) {
+                //$this->addError('This login method is not supported.');
+                //return;
+            //}
+        //}
 
         if ($this->termsRequired && !isset($_POST['termsAccepted'])) {
             $this->addError("You must agree to terms of service.");
