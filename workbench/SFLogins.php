@@ -19,8 +19,8 @@ table#t01, table#t01 th, table#t01 td{
       <th style="text-align:center">Sandbox</th>
   </tr>
   <tr>
-    <td><input type="button" value="Login" onclick="window.open('https://www.salesforce.com/login.jsp?un=relationedgeatlanta@gmail.com&pw=Atlanta12345')"/>     RelationEdge Prod</td>
-    <td><input type="button" value="Login" onclick="window.open('https://test.salesforce.com/login.jsp?un=jrichards@relationedge.dev1.com&pw=REPassword1')"/>     RelationEdge Sandbox</td>
+    <td><input type="button" value="Login" onclick="window.open('https://www.salesforce.com/login.jsp?un=relationedgeatlanta@gmail.com&pw=')"/>     RelationEdge Prod</td>
+    <td><input type="button" value="Login" onclick="window.open('https://test.salesforce.com/login.jsp?un=jrichards@relationedge.dev1.com&pw=')"/>     RelationEdge Sandbox</td>
   </tr>
   </table>
 </form>
