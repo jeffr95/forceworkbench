@@ -5,7 +5,7 @@ require_once 'header.php';
 ?>
 
 <style>
-table#t01 tr, table#t01 td{
+table#t01, table#t01 th, table#t01 td{
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -15,8 +15,8 @@ table#t01 tr, table#t01 td{
   <table id="t01" style="width:100%">
   <h4>RelationEdge Projects</h1>
   <tr>
-      <th style="border:0; text-align:center">Production</th>
-      <th style="border:0; text-align:center">Sandbox</th>
+      <th style="text-align:center">Production</th>
+      <th style="text-align:center">Sandbox</th>
   </tr>
   <tr>
     <td><input type="button" value="Login" onclick="window.open('https://www.salesforce.com/login.jsp?un=relationedgeatlanta@gmail.com&pw=Atlanta12345')"/>     RelationEdge Prod</td>
