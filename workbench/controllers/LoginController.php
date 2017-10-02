@@ -45,7 +45,7 @@ class LoginController {
 
         $this->startUrl = isset($_REQUEST['startUrl'])
                               ? $_REQUEST['startUrl']
-                              : "SFLogins.php";
+                              : "select.php";
 
         $this->oauthEnabled = false;
         foreach (WorkbenchConfig::get()->value('oauthConfigs') as $host => $hostInfo) {
