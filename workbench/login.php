@@ -10,7 +10,6 @@ if (isset($_POST['uiLogin'])
     || isset($_POST["oauth_Login"])
     || isset($_GET["code"])
     || isset($_POST["signed_request"])
-    || $_REQUEST["atl"]=="REAtlanta1"
 ) {
     $c->processRequest();
 }
