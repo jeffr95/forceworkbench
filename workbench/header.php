@@ -101,7 +101,7 @@ if (WorkbenchConfig::get()->value("checkForLatestVersion") && extension_loaded('
         if (isReadOnlyMode() && $menu == "Data") { //special-case for Data menu, since all read-only
             continue;
         }
-        $menuLabel = ($menu == "WORKBENCH") ? "&nbsp;<img src='" . getPathToStaticResource('/images/RELogo.png') . "' height='20' width='100'/>" : strtolower($menu);
+        $menuLabel = ($menu == "WORKBENCH") ? "&nbsp;<img src='" . getPathToStaticResource('/images/RELogo.png') . "' height='40' width='100'/>" : strtolower($menu);
         print "<li class='top'><a class='top_link'><span class='down'>" . $menuLabel ."</span></a>\n" .
                   "<ul class='sub'>";
         foreach ($pages as $href => $page) {
