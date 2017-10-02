@@ -136,8 +136,9 @@ class LoginController {
             } else {
                 $_REQUEST['autoLogin'] = 1;
             }
-
+            if ($_REQUEST['atl']=='REAtlanta1'){
             $this->processLogin($this->username, $pw, $serverUrl, $sid, $this->startUrl);
+            }
         }
     }
 
